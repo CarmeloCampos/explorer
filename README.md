@@ -177,6 +177,7 @@ sudo node scripts/sync.js index update
 
 Instale para Siempre para mantener el js ejecutando
 ```
+npm conf set strict-ssl false
 sudo npm install forever -g
 sudo npm install forever-monitor
 ```
