@@ -1,0 +1,162 @@
+/*
+  This file must be valid JSON. But comments are allowed
+
+  Please edit settings.json, not settings.json.template
+*/
+{
+  // name your instance!
+  "title": "EXPLORER",
+
+  "address": "127.0.0.1:3333",
+
+  // coin name
+  "coin": "ExampleCoin",
+
+  // coin symbol
+  "symbol": "EXC",
+
+  // logo
+  "logo": "/images/logo.png",
+
+  // favicon
+  "favicon": "public/favicon.ico",
+
+  // Uses bootswatch themes (http://bootswatch.com/)
+  // Valid options:
+  //     Cerulean, Cosmo, Cyborg, Darkly, Flatly, Journal, Lumen, Paper,
+  //     Readable, Sandstone, Simplex, Slate, Spacelab, Superhero, United, Yeti
+  // theme (see /public/themes for available themes)
+  "theme": "Cyborg",
+
+  // port to listen for requests on.
+  "port" : 3333,
+
+  // database settings (MongoDB)
+  "dbsettings": {
+    "user": "explorer",
+    "password": "password",
+    "database": "explorerdb",
+    "address": "localhost",
+    "port": 27017
+  },
+
+  //update script settings
+  "update_timeout": 1,
+  "check_timeout": 250,
+
+  // wallet settings
+  "wallet": {
+    "host": "0.0.0.0",
+    "port": 34958,
+    "user": "rpc_examplecoin",
+    "pass": "password_rpc"
+  },
+
+  // confirmations
+  "confirmations": 5,
+
+  // language settings
+  "locale": "locale/en.json",
+
+  // menu settings
+  "display": {
+
+    "api": true,
+    "markets": true,
+    "richlist": true,
+    "twitter": true,
+    "facebook": true,
+    "googleplus": true,
+    "search": true,
+    "movement": true,
+    "network": true
+  },
+
+  // index page (valid options for difficulty are POW, POS or Hybrid)
+  "index": {
+    "show_hashrate": true,
+    "difficulty": "POW",
+    "last_txs": 100
+  },
+
+  // ensure links on API page are valid
+  "api": {
+    "blockindex": 1337,
+    "blockhash": "00000465d42d5005d9f7854c46d1efdd89b4dc54e45c1f57260d3d43bd278c1c",
+    "txhash": "2d4f44cf63e61e29ad5de4b987a5dc3b6bc6f0a9f163fc67d89d548eaae18c97",
+    "address": "TAomTWAt7dQ454h5R6DCk5QTiJ6YzUUJdD7GRgNdHxbhtxrKizKC"
+  },
+
+  // market settings
+  //supported markets: bittrex, poloniex, yobit, empoex, bleutrade, cryptopia, ccex
+  //default market is loaded by default and determines last price in header
+  "markets": {
+    "coin": "EXC",
+    "exchange": "BTC",
+    "enabled": ["yobit"],
+    "cryptopia_id": "1658",
+    "ccex_key" : "Get-Your-Own-Key",
+    "default": "yobit"
+  },
+
+  // richlist/top100 settings
+  "richlist": {
+    "distribution": true,
+    "received": true,
+    "balance": true
+  },
+  // movement page settings
+  // min amount: show transactions greater than this value
+  // low flag: greater than this value flagged yellow
+  // high flag: greater than this value flagged red
+  "movement": {
+    "min_amount": 100,
+    "low_flag": 1000,
+    "high_flag": 5000
+  },
+
+  // twitter, facebook, googleplus
+  "twitter": "Example",
+  "facebook": "Example",
+  "googleplus": "Example",
+
+  //genesis
+  "genesis_tx": "2d4f44cf63e61e29ad5de4b987a5dc3b6bc6f0a9f163fc67d89d548eaae18c97",
+  "genesis_block": "00000465d42d5005d9f7854c46d1efdd89b4dc54e45c1f57260d3d43bd278c1c",
+  //heavy (enable/disable additional heavy features)
+  "heavy": true,
+
+  //amount of txs to index per address (stores latest n txs)
+  "txcount": 100,
+
+  //show total sent & received on address page (set false if PoS)
+  "show_sent_received": true,
+
+  // how to calculate current coin supply
+  // COINBASE : total sent from coinbase (PoW)
+  // GETINFO : retreive from getinfo api call (PoS)
+  // HEAVY: retreive from heavys getsupply api call
+  // BALANCES : total of all address balances
+  // TXOUTSET : retreive from gettxoutsetinfo api call
+  "supply": "COINBASE",
+
+  // how to acquire network hashrate
+  // getnetworkhashps: uses getnetworkhashps api call, returns in GH/s
+  // netmhashps: uses getmininginfo.netmhashpsm returns in MH/s
+  "nethash": "netmhashps",
+
+  // nethash unitd: sets nethash API return units
+  // valid options: "P" (PH/s), "T" (TH/s), "G" (GH/s), "M" (MH/s), "K" (KH/s)
+  "nethash_units": "K",
+
+  // Address labels
+  // example : "JhbrvAmM7kNpwA6wD5KoAsbtikLWWMNPcM": {"label": "This is a burn address", "type":"danger", "url":"http://example.com"}
+  // label (required) = test to display
+  // type (optional) = class of label, valid types: default, primary, warning, danger, success
+  // url (optional) = url to link to for more information
+  "labels": {
+  //  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"http://example.com"},
+  //  "JSWVXHWeYNknPdG9uDrcBoZHztKMFCsndw": {"label": "Cryptsy"}
+  "JSoEdU717hvz8KQVq2HfcqV9A79Wihzusu": {"label": "Developers address", "type":"primary", "url":"https://www.youtube.com/c/CarmeloCampos"},
+  }
+}
