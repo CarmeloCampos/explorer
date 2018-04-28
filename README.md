@@ -5,7 +5,7 @@ Instalar Repositorios
 Escribir en la terminal los siguientes comandos:
 
 ```bash
-sudo apt-get update sudo apt-get upgrade sudo apt-get install build-essential libssl-dev libdb-dev unzip libdb++-dev libboost-all-dev git libssl1.0.0-dbg libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev git npm nodejs-legacy curl build-essential libtool autotools-dev autoconf pkg-config libssl-dev redis-server libdb++-dev libboost-all-dev libqrencode-dev miniupnpc libminiupnpc-dev pkg-config libtool autotools-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev automake -y
+sudo apt-get update && sudo apt-get upgrade && sudo apt-get install build-essential libssl-dev libdb-dev unzip libdb++-dev libboost-all-dev git libssl1.0.0-dbg libdb-dev libdb++-dev libboost-all-dev libminiupnpc-dev libevent-dev libcrypto++-dev libgmp3-dev git npm nodejs-legacy curl build-essential libtool autotools-dev autoconf pkg-config libssl-dev redis-server libdb++-dev libboost-all-dev libqrencode-dev miniupnpc libminiupnpc-dev pkg-config libtool autotools-dev libqt5gui5 libqt5core5a libqt5dbus5 qttools5-dev qttools5-dev-tools libprotobuf-dev automake -y
 ```
 
 ******************************************
