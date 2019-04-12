@@ -149,7 +149,7 @@ La creación de una Base de datos MongoDB
 ```
 sudo mongo
 > use explorerdb
-> db.createUser( { user: "explorer", pwd: "password", roles: [ "readWrite" ] } )
+db.createUser( { user: "explorer", pwd: "password", roles: [ "readWrite" ] } )
 > exit
 ```
 
