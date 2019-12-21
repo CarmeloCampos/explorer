@@ -1,10 +1,6 @@
-/*
-  This file must be valid JSON. But comments are allowed
 
-  Please edit en.json, not en.json.template
-*/
 {
-    // menu items
+
     "menu_explorer": "Explorer",
     "menu_api": "API",
     "menu_markets": "Markets",
@@ -14,7 +10,6 @@
     "menu_node": "Nodes",
     "menu_network": "Network",
 
-    // explorer view
     "ex_title": "Block Explorer",
     "ex_search_title": "Search",
     "ex_search_button": "Search",
@@ -26,7 +21,6 @@
     "ex_supply": "Coin Supply",
     "ex_block": "Block",
 
-    // transaction view
     "tx_title": "Transaction Details",
     "tx_block_hash": "Block Hash",
     "tx_recipients": "Recipients",
@@ -35,13 +29,11 @@
     "tx_address": "Address",
     "tx_nonstandard": "NONSTANDARD TX",
 
-    // block view
     "block_previous": "Previous",
     "block_next": "Next",
     "block_title": "Block Details",
     "block_genesis": "GENESIS",
 
-    // global
     "difficulty": "Difficulty",
     "network": "Network",
     "height": "Height",
@@ -58,12 +50,10 @@
     "proof_of_stake": "PoS",
     "initial_index_alert": "Indexing is currently incomplete, functionality is limited until index is up-to-date.",
 
-    //address menu
     "a_menu_showing": "Showing last",
     "a_menu_txs": "transactions",
     "a_menu_all": "All",
 
-    //richlist
     "rl_received_coins": "Top 100 - Received Coins",
     "rl_current_balance": "Top 100 - Current Balance",
     "rl_received": "Received",
@@ -82,7 +72,6 @@
     "net_country": "Country",
     "net_warning": "This is sub sample of the network based on wallets that have connected to this node in the last 24hours.",
 
-    // api view
     "api_title": "API Documentation",
     "api_message": "The block explorer provides an API allowing users and/or applications to retrieve information from the network without the need for a local wallet.",
     "api_calls": "API Calls",
@@ -102,7 +91,6 @@
     "api_getnextrewardestimate": "Returns an estimate for the next block reward based on the current state of decentralized voting.",
     "api_getnextrewardwhenstr": "Returns string describing how long until the votes are tallied and the next block reward is computed.",
 
-    // Markets view
     "mkt_hours": "24 hours",
     "mkt_view_chart": "View 24 hour summary",
     "mkt_view_summary": "View 24 hour chart",
@@ -124,7 +112,6 @@
     "mkt_type": "Type",
     "mkt_time_stamp": "Time Stamp",
 
-    // Markets
     "poloniex": "Poloniex",
     "bittrex": "Bittrex",
     "bleutrade": "Bleutrade",
@@ -133,8 +120,9 @@
     "cryptsy": "Cryptsy",
     "cryptopia": "Cryptopia",
     "ccex": "C-Cex",
+    "crex": "Crex24",
 
-    // Heavy rewards view
+
     "heavy_title": "Reward/voting information",
     "heavy_vote": "Vote",
     "heavy_cap": "Coin Cap",
