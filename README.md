@@ -33,79 +33,6 @@ sudo apt-get update
 sudo apt-get upgrade -y
 ```
 
-******************************************
-La adición de la Moneda
----------------------
-******************************************
-Escribir en la terminal los siguientes comandos:
-```bash
-sudo git clone https://github.com/WolfClover/clovercoin-source/
-```
-
-Cambie los Directorios src/
----------------------
-******************************************
-```bash
-cd clovercoin-source/src/ 
-```
-
-Compilar el código
----------------------
-******************************************
-```bash
-sudo make -f makefile.unix RELEASE=0
-sudo chmod +x clovercoind
-```
-
-Inicie el archivo con el daemon, de modo que usted puede crear un archivo de configuración
----------------------
-******************************************
-```bash
-sudo ./clovercoind -daemon
-```
-
-Crear un fichero de configuración .clovercoin/clovercoin.conf
----------------------
-******************************************
-```bash
-cd
-sudo nano .clovercoin/clovercoin.conf
-```
-
-rpcuser=rpc_clovercoin
-rpcpassword=57fca2b6e28491f9ceaa56aba
-rpcallowip=127.0.0.1
-rpcport=36600
-listen=1
-server=1
-txindex=1
-daemon=1
-addnode=node.wolfclover.com
-
-Asegúrese de que el archivo de sólo lectura.
----------------------
-******************************************
-```bash
-sudo chmod 400 .clovercoin/clovercoin.conf
-cd clovercoin-source/src/
-sudo ./clovercoind -daemon -txindex
-```
-
-Compruebe que el demonio ha comenzado. Si devuelve información, el demonio está trabajando!
----------------------
-******************************************
-```bash
-sudo ./clovercoind getinfo
-```
-
-Detener el daemon
----------------------
-******************************************
-```bash
-sudo ./clovercoind stop
-```
-
-******************************************
 *** La configuración del Explorador
 ---------------------
 ******************************************
@@ -113,6 +40,7 @@ sudo ./clovercoind stop
 ******************************************
 
 Instalar MongoDB Edición De La Comunidad
+Esto para ubuntu 14
 https://docs.mongodb.org/manual/tutorial/install-mongodb-on-ubuntu/
 
 ```bash
